@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	int menor;
+	int meio;
+	int maior;
+	int caixa;
+	
+	scanf("%d %d %d", &menor, &meio, &maior);
+	
+	if(menor>=maior || meio>= maior){
+		if(menor>=meio){
+			caixa = maior;
+			maior = menor;
+			menor = caixa; 
+		}
+		else{
+			caixa = maior;
+			maior = meio;
+			meio = caixa;
+		}
+	}
+	if(menor>=meio){
+		caixa = meio;
+		meio = menor;
+		menor = caixa;
+	}
+	printf("%d\n%d\n%d\n", menor, meio, maior);
+	
+	return 0;
+}
