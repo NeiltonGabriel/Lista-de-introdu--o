@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int pagar;
+    
+    scanf("%d", &pagar);
+    
+    printf("%.2f\n", pagar*1.1);
+    
+	return 0;
+}
