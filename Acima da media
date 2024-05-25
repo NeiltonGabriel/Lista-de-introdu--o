@@ -1,0 +1,22 @@
+/*
+Dados três números em ponto flutuante queremos saber quantos deles estão acima da média aritmética.
+*/
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    double nota_1, nota_2, nota_3, media; 
+    int passou = 0;
+    scanf("%lf", &nota_1);
+	scanf("%lf", &nota_2);
+	scanf("%lf", &nota_3);
+	media = (nota_1 + nota_2 + nota_3)/3;
+	if (nota_1 > media){ passou += 1;}
+    if (nota_2 > media){ passou += 1;}
+	if (nota_3 > media){ passou += 1;}
+    printf("%d", passou);
+    return (0);
+}
