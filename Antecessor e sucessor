@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int numero;
+	
+	scanf("%d", &numero);
+	
+	numero--;
+	
+	printf("%d ", numero);
+	
+	numero += 2;
+	
+	printf("%d\n", numero);
+	
+	return (0);
+}
