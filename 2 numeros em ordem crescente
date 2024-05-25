@@ -1,0 +1,35 @@
+/*
+Receba dois números inteiros e os imprima em ordem crescente.
+*/
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	int menor;
+	
+	int maior;
+	
+	int caixa;
+	
+	scanf("%d %d", &menor, &maior);
+	
+	if (menor <= maior){ 
+	   printf("%d %d\n", menor, maior); 
+	}
+	
+	else if (maior <= menor){ 
+	
+	caixa = menor;
+	
+	menor = maior;
+	
+	maior = caixa;
+	
+	printf("%d %d\n", menor, maior);
+	}
+	
+	return 0;
+}
